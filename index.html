@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>رزومه فرهاد دژمی‌فرد - توسعه‌دهنده Node.js</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap");
+      body {
+        font-family: "Vazirmatn", sans-serif;
+        background-color: #f7f9fb;
+      }
+      .section-title {
+        position: relative;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        color: #1f2937; /* Dark Gray */
+      }
+      .section-title::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 3px;
+        width: 50px;
+        background-color: #3b82f6; /* Blue 500 */
+        border-radius: 9999px;
+      }
+      .job-title {
+        font-weight: 700;
+        color: #111827;
+      }
+      .date {
+        color: #6b7280;
+        font-size: 0.875rem;
+      }
+      .skill-item {
+        background-color: #e5e7eb;
+        color: #374151;
+        padding: 0.25rem 0.75rem;
+        border-radius: 0.5rem;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+      }
+      .skill-item:hover {
+        background-color: #d1d5db;
+      }
+      .summary-box {
+        background-color: #ffffff;
+        border-right: 5px solid #3b82f6; /* Blue border for emphasis */
+        padding: 1.5rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -2px rgba(0, 0, 0, 0.06);
+        border-radius: 0.75rem;
+      }
+      /* Style for printing (converting to PDF) */
+      @media print {
+        body {
+          background-color: #fff;
+        }
+        .container {
+          box-shadow: none;
+          max-width: none;
+        }
+        .summary-box {
+          box-shadow: none;
+          border-right: 3px solid #3b82f6;
+          padding: 1rem 0 1rem 1rem; /* Adjust padding for print */
+          border-radius: 0;
+        }
+      }
+    </style>
+  </head>
+  <body class="p-4 sm:p-8">
+    <div
+      class="container mx-auto max-w-4xl bg-white p-6 sm:p-10 rounded-xl shadow-2xl"
+    >
+      <!-- Header / Contact Info -->
+      <header class="mb-8 border-b pb-4">
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-1">
+          فرهاد دژمی‌فرد
+        </h1>
+        <p class="text-lg text-gray-600 mb-4">
+          مهندس نرم‌افزار (متخصص Node.js)
+        </p>
+        <div class="flex flex-wrap text-sm text-gray-600 gap-y-1 sm:gap-x-8">
+          <span><i class="fas fa-map-marker-alt"></i> تهران، امیریه</span>
+          <span><i class="fas fa-envelope"></i> Farddezh@gmail.com</span>
+          <span><i class="fas fa-phone"></i>۰۹۹۰۹۰۱۱۴۰۱</span>
+        </div>
+      </header>
+
+      <!-- Professional Summary -->
+      <section class="mb-8">
+        <h2 class="section-title text-2xl">خلاصه توانمندی‌های حرفه‌ای</h2>
+        <div class="summary-box">
+          <p class="text-gray-700 leading-relaxed text-justify">
+            توسعه دهنده نرم‌افزار با انگیزه و علاقه به توسعه بک‌اند و کار با
+            ‌Node.JS. مسلط به Javascript و متعهد به کارگرفتن تکنولوژی‌های به روز
+            و ساخت محصولات نوآورانه. مشتاق به همکاری و به اشتراک گذاری مهارت‌ها
+            با تیم در محیطی پویا. با وجود سابقه کاری متفاوت، تمایل به مشارکت در
+            توسعه نرم‌افزارهایی بر پایه Node.JS میباشم.
+          </p>
+        </div>
+      </section>
+
+      <!-- Work Experience -->
+      <section class="mb-8">
+        <h2 class="section-title text-2xl">سوابق شغلی</h2>
+        <div class="space-y-4 pr-3 border-r-2 border-gray-200">
+          <div class="relative pl-6">
+            <h3 class="job-title text-xl text-blue-700">
+              توسعه‌دهنده Back-End
+            </h3>
+            <p class="text-lg font-medium text-gray-800">ViraProcess، تهران</p>
+            <p class="date">تیر ۱۴۰۰ تا خرداد ۱۴۰۱ (July 2021 – June 2022)</p>
+            <ul class="list-disc pr-6 mt-2 text-gray-700 space-y-1">
+              <li>
+                توسعه و نگهداری نرم‌افزار فروشگاهی ساخته شده با فریم‌ورک
+                ASP.NET.
+              </li>
+              <li>
+                پیاده‌سازی راه‌حل‌های خودکار وب اسکرپینگ برای جمع‌آوری داده‌های
+                ضروری با استفاده از Python، Node.js و Selenium.
+              </li>
+              <li>
+                همکاری در بخش فرانت‌اند برای طراحی و پیاده‌سازی نیازمندی‌ها با
+                استفاده از Bootstrap.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="mb-8">
+        <h2 class="section-title text-2xl">تحصیلات</h2>
+        <div class="space-y-1 pr-3 border-r-2 border-gray-200">
+          <div class="relative pl-6">
+            <h3 class="job-title text-xl text-blue-700">
+              کارشناسی: مهندسی کامپیوتر (گرایش نرم‌افزار)
+            </h3>
+            <p class="text-lg font-medium text-gray-800">
+              دانشگاه آزاد اسلامی واحد تهران شمال
+            </p>
+            <p class="date">۱۳۹۸ - ۱۴۰۲ (2019 – 2023)</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills & Technologies -->
+      <section class="mb-8">
+        <h2 class="section-title text-2xl">مهارت‌ها و فناوری‌ها</h2>
+
+        <!-- Skills Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Back-End -->
+          <div>
+            <h3 class="font-bold text-lg mb-2 text-gray-900">Back-End</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-item">Node.js</span>
+              <span class="skill-item">Express.JS</span>
+              <span class="skill-item">Nest.JS</span>
+              <span class="skill-item">Bun.JS</span>
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div>
+            <h3 class="font-bold text-lg mb-2 text-gray-900">
+              زبان‌های برنامه‌نویسی
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">TypeScript</span>
+              <span class="skill-item">Python</span>
+              <span class="skill-item">C#</span>
+              <span class="skill-item">C</span>
+              <span class="skill-item">Bash</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div>
+            <h3 class="font-bold text-lg mb-2 text-gray-900">
+              پایگاه‌های داده
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-item">PostgreSQL</span>
+              <span class="skill-item">MongoDB</span>
+            </div>
+          </div>
+
+          <!-- DevOps/Tools -->
+          <div>
+            <h3 class="font-bold text-lg mb-2 text-gray-900">
+              ابزارهای DevOps/CI/CD
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-item">Docker</span>
+              <span class="skill-item">Jest</span>
+              <span class="skill-item">Git</span>
+            </div>
+          </div>
+
+          <!-- Front-End -->
+          <div class="col-span-1 md:col-span-2">
+            <h3 class="font-bold text-lg mb-2 text-gray-900">Front-End</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-item">HTML5</span>
+              <span class="skill-item">CSS</span>
+              <span class="skill-item">TailwindCSS</span>
+              <span class="skill-item">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Open Source Projects -->
+      <section class="mb-0">
+        <h2 class="section-title text-2xl">پروژه‌های متن باز</h2>
+        <div class="pr-3">
+          <p class="job-title text-xl text-blue-700">ربات تلگرام Pic2Pdf</p>
+          <p class="text-gray-700 mt-1">
+            ربات ساده تلگرام که تصاویر را به pdf تبدیل میکند. توسعه داده شده
+            توسط فریمورک Nest.JS.
+          </p>
+          <a
+            href="https://github.com/fardezh/pic2pdf-bot"
+            target="_blank"
+            class="text-blue-500 hover:text-blue-600 transition duration-300 text-sm"
+            >لینک گیت‌هاب پروژه</a
+          >
+        </div>
+      </section>
+
+      <!-- Font Awesome for Icons (Self-Correction for print/PDF) -->
+      <script
+        src="https://kit.fontawesome.com/a076d05399.js"
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        // Fallback for icons if Font Awesome is not loaded
+        document.addEventListener("DOMContentLoaded", () => {
+          const iconMap = {
+            "map-marker-alt": "📍",
+            envelope: "✉️",
+            phone: "📞",
+          };
+          document.querySelectorAll(".flex.text-sm i").forEach((icon) => {
+            const iconClass = icon.className
+              .split(" ")
+              .find((cls) => cls.startsWith("fa-"))
+              .replace("fa-", "");
+            if (iconMap[iconClass]) {
+              icon.outerHTML = iconMap[iconClass] + " ";
+            }
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>
